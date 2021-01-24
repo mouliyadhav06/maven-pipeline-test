@@ -1,5 +1,3 @@
-# **************** Jenkins Piupeline job ********************************
-
 pipeline 
 {
     agent any
