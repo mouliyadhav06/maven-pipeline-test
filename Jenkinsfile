@@ -7,7 +7,7 @@ pipeline
         {
             steps 
             { 
-                sh "rm -rf maven-pipeline-test"
+               sh "rm -rf maven-pipeline-test"
                 
             }
         }
@@ -16,8 +16,8 @@ pipeline
         {
             steps 
             {
-                sh "mvn clean -f maven-pipeline-test"
-                sh "mvn test -f maven-pipeline-test"
+                sh "mvn clean"
+                sh "mvn test"
                 
             }
         }
@@ -26,7 +26,7 @@ pipeline
         {
             steps 
             {
-                sh "mvn package -f maven-pipeline-test"
+                sh "mvn package"
             }
         }
         
